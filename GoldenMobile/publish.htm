@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- [GM] Install page for doctors' phones: https://antmarach.github.io/GoldenUpdatesMobile/GoldenMobile/publish.htm
+     (the "Install link" of GoldenMobile on the Golden Release Desk). Template - UploadMobileUpdate.ps1 fills the
+     {{...}} values and writes it as GoldenMobile/publish.htm on every upload. Keep the placeholders.
+     Related: tools/UploadMobileUpdate.ps1, CLAUDE.md. Updated: 2026-11-16 - created. -->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Golden Mobile - تثبيت</title>
+<style>
+  :root{--purple:#4A3F6B;--deep:#3D3558;--gold:#C9A43C;--bg:#F5F3F8;--fg:#1f1b2b;--muted:#6b6580;--card:#fff;--line:#e4e0ec}
+  @media (prefers-color-scheme:dark){:root{--bg:#16131f;--fg:#ece8f5;--muted:#a59fb8;--card:#221d30;--line:#352e48}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:Tahoma,Arial,sans-serif;line-height:1.6}
+  header{background:var(--purple);color:#fff;padding:22px 16px 18px;text-align:center}
+  header h1{margin:0;font-size:24px}
+  header h1 span{color:var(--gold)}
+  header p{margin:4px 0 0;opacity:.85;font-size:14px}
+  main{max-width:520px;margin:0 auto;padding:16px;display:grid;gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .ver{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+  .ver b{color:var(--fg);font-size:18px}
+  a.btn{display:block;text-align:center;background:var(--gold);color:#1f1b2b;font-weight:bold;font-size:18px;
+        padding:14px;border-radius:12px;text-decoration:none;margin-top:12px}
+  a.alt{display:block;text-align:center;color:var(--purple);margin-top:10px;font-size:14px}
+  @media (prefers-color-scheme:dark){a.alt{color:var(--gold)}}
+  h2{font-size:16px;margin:0 0 8px;color:var(--purple)}
+  @media (prefers-color-scheme:dark){h2{color:var(--gold)}}
+  ol{margin:0;padding-right:20px}
+  li{margin-bottom:6px}
+  .notes{white-space:normal}
+  .small{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1><span>Golden</span> Mobile</h1>
+  <p>تطبيق Golden Clinic للهاتف</p>
+</header>
+<main>
+  <div class="card">
+    <div class="ver"><span>الإصدار <b>1.1.5</b></span><span>2026-11-20</span></div>
+    <a class="btn" href="../GoldenMobile_9_arm64.apk" download>تنزيل التطبيق (16.7 MB)</a>
+    <a class="alt" href="../GoldenMobile_9_32bit.apk" download>للهواتف القديمة: نسخة 32-bit (16 MB)</a>
+  </div>
+
+  <div class="card">
+    <h2>طريقة التثبيت</h2>
+    <ol>
+      <li>اضغط <b>تنزيل التطبيق</b> وانتظر انتهاء التنزيل.</li>
+      <li>افتح الملف الذي تم تنزيله واضغط <b>تثبيت</b>.</li>
+      <li>إن طلب الهاتف ذلك، اسمح للمتصفح بتثبيت التطبيقات ("السماح من هذا المصدر") ثم ارجع واضغط تثبيت.</li>
+      <li>إن ظهرت رسالة أن التطبيق غير متوافق مع الهاتف، استخدم نسخة <b>32-bit</b>.</li>
+    </ol>
+    <p class="small">إن كان التطبيق مثبتاً على الهاتف فسيتم تحديثه، وتبقى البيانات (المرضى وسجل المكالمات والإعدادات) كما هي. بعد ذلك يتم التحديث من داخل التطبيق.</p>
+  </div>
+
+  <div class="card" >
+    <h2>ما الجديد</h2>
+    <div class="notes">• رمز QR لإعداد العيادة بجانب زر مريض جديد: مسح واحد يضبط المزامنة عبر الإنترنت وعنوان الشبكة المحلية وعنوان Caller ID<br>• Caller ID أصبح مدمجاً في التطبيق: يرسل رقم المتصل إلى حاسوب العيادة دون الحاجة إلى تطبيق منفصل<br>• تنبيه عند وجود تطبيق Caller ID القديم مع زر لفتح إعداداته<br>• صفحة جديدة في الإعدادات: Caller ID إلى العيادة (العنوان، تشغيل/إيقاف، آخر إرسال)<br>• صفحات المزامنة عبر الإنترنت وصفحات المريض الجديد والمواعيد</div>
+  </div>
+</main>
+</body>
+</html>
